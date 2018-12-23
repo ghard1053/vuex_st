@@ -44,6 +44,10 @@
       </li>      
     </ul>
 
+    <h2>保存と復元</h2>
+    <button type="button" v-om:click="save">保存</button>
+    <button type="button" v-om:click="restore">復元</button>
+
   </div>
 </template>
 
@@ -96,6 +100,12 @@ export default {
       this.$store.commit('changeFilter', {
         filter: labelId
       })
+    },
+    save () {
+      this.$store.dispatch('save')
+    },
+    restore () {
+      this.$store.dispatch('restore')
     }
   }
 }
