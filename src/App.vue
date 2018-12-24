@@ -41,7 +41,7 @@
         <input type="radio" v-bind:checked="filter === null"
           v-on:change="changeFilter(null)">
         フィルタなし
-      </li>      
+      </li>
     </ul>
 
     <h2>保存と復元</h2>
